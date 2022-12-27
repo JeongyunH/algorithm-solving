@@ -2,12 +2,12 @@ import java.util.*;
 
 class Main {
 	public int count(int[] arr, int capacity) {
-		// ���� �ʿ��ϴ��� ���� return
+		// 몇장 필요하는지 개수 return
 		int cnt=1, sum=0;
 		for(int x : arr) {
 			if(sum+x > capacity) {
 				cnt++;
-				sum=x;		// ���ο� CD�� ù��° �뷮
+				sum=x;		// 새로운 CD의 첫번째 용량
 			}
 			else sum+=x;
 		}

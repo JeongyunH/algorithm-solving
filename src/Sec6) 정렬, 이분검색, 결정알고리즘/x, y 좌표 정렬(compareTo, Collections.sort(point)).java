@@ -8,9 +8,9 @@ class Point implements Comparable<Point>{
 	}
 	@Override
 	public int compareTo(Point o) {
-		// ������ ���������� return �ǰ� �ض�
-		// �������� : this.y - o.y;
-		// �������� : o.y - this.y
+		// 무조건 음수값으로 return 되게 해라
+		// 오름차순 : this.y - o.y;
+		// 내림차순 : o.y - this.y
 		if(this.x == o.x) return this.y-o.y;
 		else return this.x - o.x;
 	}

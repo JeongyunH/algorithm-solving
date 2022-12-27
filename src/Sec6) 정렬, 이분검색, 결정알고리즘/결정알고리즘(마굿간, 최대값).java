@@ -2,11 +2,11 @@ import java.util.*;
 
 class Main {
 	public int count(int[] arr, int distance) {
-		// �Ÿ��� distance�� ��, ������ �ִ� ������ return
+		// 거리가 distance일 때, 넣을수 있는 마리수 return
 		int cnt=1;
 		int ep = arr[0];
 		for(int i=1 ; i<arr.length ; i++) {
-			if(arr[i] - ep >= distance) {	// distance�� ������ ������ ����
+			if(arr[i] - ep >= distance) {	// distance가 좁으면 마리수 증가
 				cnt++;
 				ep = arr[i];
 			}
