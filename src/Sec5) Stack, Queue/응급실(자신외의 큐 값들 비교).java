@@ -19,7 +19,7 @@ public int solution(int n, int m, int[] arr) {
 	while(!Q.isEmpty()) {
 		Person tmp = Q.poll();
 		for(Person x : Q) {
-			// �Ʒ��� �������� ������ �ڽ�(tmp)�� priority�� ���� ������(=����޾Ƶ� ��)
+			// 아래를 만족하지 않으면 자신(tmp)이 priority가 가장 높은것(=진료받아도 됨)
 			if(x.priority > tmp.priority) {
 				Q.offer(tmp);
 				tmp = null;
