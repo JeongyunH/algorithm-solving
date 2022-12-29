@@ -46,7 +46,7 @@ class Main {
 		int answer = Integer.MIN_VALUE;
 		for(int i=0 ; i<n ; i++) {
 			for(int j=0 ; j<m ; j++) {
-				if(board[i][j]==0) flag=true;
+				if(board[i][j]==0) flag=false;
 			}
 		}
 		if(flag) {
