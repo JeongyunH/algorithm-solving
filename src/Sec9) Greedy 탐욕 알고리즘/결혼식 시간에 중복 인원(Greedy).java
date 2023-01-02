@@ -1,8 +1,8 @@
 import java.util.*;
 
 class Time implements Comparable<Time>{
-	int t;
-	char s;
+	int t;		// time
+	char s;		// state
 	public Time(int t, char s) {
 		this.t = t;
 		this.s = s;
