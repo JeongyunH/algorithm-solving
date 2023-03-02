@@ -2,14 +2,14 @@ import java.util.*;
 
 class Main {
 	public int solution(int n) {
-		int[] dy = new int[n+2];
+		int[] dy = new int[n+1];
 		dy[1] = 1;
 		dy[2] = 2;
-		for(int i=3 ; i<=n+1 ; i++) {
+		for(int i=3 ; i<=n ; i++) {
 			dy[i] = dy[i-1] + dy[i-2];
 		}
 		
-		return dy[n+1];
+		return dy[n];
 	}
 	public static void main(String[] args) {
 		Main T = new Main();
